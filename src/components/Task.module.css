@@ -1,0 +1,43 @@
+.task {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+
+    background: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.task + .task {
+    margin-top: 0.75rem;
+}
+
+.buttonCheck {
+    background: none;
+    justify-self: flex-start;
+    cursor: pointer;
+}
+
+.taskContent {
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.taskContentActive.taskContent {
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
+
+.deleteTask {
+    background: none;
+    color: var(--gray-300);
+    cursor: pointer;
+    justify-self: flex-end;
+    
+    transition: 150ms;
+}
+
+.deleteTask:hover {
+    color: var(--danger);
+}

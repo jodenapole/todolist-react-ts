@@ -1,0 +1,60 @@
+.tasksHeader {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0 1.5rem;
+}
+
+.taskCreation {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    gap: 0.5rem;
+    margin-top: calc(0px - 1.5rem - 6px);
+}
+
+.taskName {
+    background: var(--gray-400);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.addTask {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+
+    background: var(--blue-dark);
+    color: var(--white);
+    line-height: 1.6;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border-radius: 8px;
+
+    transition: 150ms;
+}
+
+.addTask:hover {
+    background: var(--blue);
+}
+
+.createdTasks {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+.doneTasks {
+    color: var(--purple);
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.createdTasks span, .doneTasks span {
+    color: var(--white);
+    background: var(--gray-400);
+    border-radius: 1rem;
+    padding: 0.1275rem 0.5rem;
+}
